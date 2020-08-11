@@ -38,5 +38,3 @@ class Stack:
         return rstr
 
 
-if __name__ == '__main__':
-   print(Stack.print_reverse("varad is"))
