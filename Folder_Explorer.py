@@ -14,9 +14,11 @@ def RenameFiles(name,to_name):
 
 def fileInfo(name):
     print(os.stat())
+    
+ 
 f =open("test_file.txt","w+",encoding="utf-8")
 string =""
-for dirpath,dirnames,filenames in os.walk("C:\My Music"):
+for dirpath,dirnames,filenames in os.walk(str(os.curdir)):
     print('Current Path : ',dirpath)
     print("dirnames",dirnames)
     print("filenames",filenames)
